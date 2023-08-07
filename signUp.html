@@ -1,0 +1,36 @@
+<html>
+  <head>
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- <title>Login</title> -->
+
+  </head>
+  <body>
+    <div class="container  my-5">
+        <div class="group w-75  m-auto form-container text-center p-5">
+            <h1 class="py-3">Smart Login System</h1>
+            <input type="text" placeholder="Enter your name" id="firstName" class="form-control bg-transparent mb-3 text-white ">
+            <p id="usernameAlert" class="d-none text-danger">include at least 3 letters starting with capital</p>
+
+            <input type="text" placeholder="Enter your email" id="emailName" class="form-control bg-transparent mb-3 text-white">
+            <p id="userEmailAlert" class="d-none text-danger">name@example.com</p>
+
+            <input type="password" placeholder="Enter your password" id="passwordNumber" class="form-control bg-transparent mb-3 text-white">
+            <p id="userPasswordAlert" class="d-none text-danger m-0"> password from 5 to 15 characters</p>
+
+            <p class="text-success d-none" id="confirmMsg">Success</p>
+            <p class="text-danger d-none mb-0" id="accountExistMsg">this account is exist ! Try another one.</p>
+            <p class="text-danger d-none mb-0" id="tryAgainMsg">signUp failed ! Try again</p>
+            <a id="signupBtn" onclick="signUp()" class="btn btn-outline-info w-100 mb-3 mt-4 text-decoration-none">Sign Up</a>
+            <p class="text-white d-block">you have an accoount? <a href="index.html" class="text-white text-decoration-none">Sign In</a></p>
+            <a href="index.html" class="d-none btn btn-outline-success text-white w-25 m-auto" id="signin">signin</a>
+            </p>
+        </div>
+    </div>
+     <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="JS/main.js"></script>
+  </body>
+</html>
